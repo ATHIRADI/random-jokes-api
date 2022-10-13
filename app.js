@@ -35,6 +35,6 @@ app.get("/single", (req, res) => {
 });
 
 //Server Running
-app.listen(3001, () => {
-  console.log("Server started @ 3001");
+app.listen(process.env.PORT || 5000, () => {
+  console.log("Server started");
 });
